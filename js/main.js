@@ -1,16 +1,33 @@
 let productos = [];
 const productosPorPagina = 8; 
 let paginaActual = 1;
+const urlParams = new URLSearchParams(window.location.search);
+const searchTerm = urlParams.get('search');
 
 fetch("./js/productos.json")
   .then((response) => response.json())
   .then((data) => {
     productos = data;
-    cargarProductos(productos);
-    actualizarNumerito(); 
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchTerm = urlParams.get('search');
+    
+    if (searchTerm) {
+      const productosFiltrados = productos.filter(producto =>
+        producto.titulo.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      cargarProductos(productosFiltrados);
+    } else {
+      cargarProductos(productos);
+    }
+    
+    actualizarNumerito();
   });
 
-
+const searchIcon = document.getElementById('search-icon');
+const searchInput = document.getElementById('search-input');
+const productosFiltrados = [];
+const botonesFiltro = document.querySelectorAll(".filters div[data-filter]");
+const contenedorFiltros = document.querySelector(".filterswiper-wrapper");
 const inputBuscador = document.querySelector(".Buscador input[type='text']");
 const botonBuscador = document.querySelector(".Buscador .btn");
 const contenedorProductos = document.querySelector("#contenedor-productos");
@@ -18,6 +35,41 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
+
+botonesFiltro.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    const filtro = boton.getAttribute("data-filter");
+    const productosFiltrados = productos.filter(
+      (producto) => filtro === "todos" || producto.categoria.id === filtro
+    );
+    paginaActual = 1;
+    cargarProductos(productosFiltrados);
+  });
+});
+
+searchIcon.addEventListener('click', () => {
+  const searchTerm = searchInput.value.trim().toLowerCase();
+  if (searchTerm) {
+    const productosFiltrados = productos.filter(producto =>
+      producto.titulo.toLowerCase().includes(searchTerm)
+    );
+    cargarProductos(productosFiltrados);
+  }
+});
+
+searchInput.addEventListener('keyup', event => {
+  if (event.key === 'Enter') {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    if (searchTerm) {
+      const productosFiltrados = productos.filter(producto =>
+        producto.titulo.toLowerCase().includes(searchTerm)
+      );
+      cargarProductos(productosFiltrados);
+    }
+  }
+});
+
+
 
 botonBuscador.addEventListener("click", () => {
   const searchTerm = inputBuscador.value.toLowerCase();
@@ -37,6 +89,13 @@ inputBuscador.addEventListener("keyup", (event) => {
   }
 });
 
+if (searchTerm) {
+  const productosFiltrados = productos.filter(producto =>
+    producto.titulo.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+  cargarProductos(productosFiltrados);
+}
+
 botonesCategorias.forEach((boton) =>
   boton.addEventListener("click", () => {
     aside.classList.remove("aside-visible");
@@ -48,6 +107,16 @@ function cargarProductos(productosElegidos) {
   const startIndex = (paginaActual - 1) * productosPorPagina;
   const endIndex = startIndex + productosPorPagina;
   const productosPagina = productosElegidos.slice(startIndex, endIndex);
+
+  botonesFiltro.forEach((boton) => {
+    boton.classList.remove("active");
+    if (
+      (boton.getAttribute("data-filter") === "todos" && paginaActual === 1) ||
+      boton.getAttribute("data-filter") === productosElegidos[0].categoria.id
+    ) {
+      boton.classList.add("active");
+    }
+  });
 
   productosPagina.forEach((producto) => {
     const div = document.createElement("div");
@@ -106,7 +175,6 @@ botonesCategorias.forEach((boton) => {
     botonesCategorias.forEach((boton) => boton.classList.remove("active"));
     e.currentTarget.classList.add("active");
 
-    // Establecer la página actual a 1 al cambiar de categoría
     paginaActual = 1;
 
     if (e.currentTarget.id != "todos") {
@@ -138,7 +206,6 @@ botonesCategorias.forEach((boton) => {
       cargarProductos(productosFiltrados);
     });
 
-    // Evento para la tecla Enter en el input de búsqueda dentro de una categoría
     inputBuscador.addEventListener("keyup", (event) => {
       if (event.key === "Enter") {
         const searchTerm = inputBuscador.value.toLowerCase();
@@ -167,7 +234,8 @@ function actualizarBotonesAgregar() {
   });
 }
 
-let productosEnCarrito = [];
+let productosEnCarrito = JSON.parse(localStorage.getItem("productos-en-carrito") || "[]");
+actualizarNumerito();
 let totalProductosEnCarrito = 0;
 
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
@@ -214,10 +282,8 @@ function agregarAlCarrito(producto) {
   totalProductosEnCarrito += producto.cantidad;
   actualizarNumerito();
   
-  localStorage.setItem(
-    "productos-en-carrito",
-    JSON.stringify(productosEnCarrito)
-  );
+  
+  localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 function actualizarNumerito() {
@@ -227,7 +293,6 @@ function actualizarNumerito() {
   );
   numerito.innerText = nuevoNumerito;
 
-  // Actualizar el número en todos los iconos de carrito
   const iconosCarrito = document.querySelectorAll(".fa-shopping-cart");
   iconosCarrito.forEach((icono) => {
     icono.nextElementSibling.textContent = nuevoNumerito;
@@ -265,7 +330,7 @@ prevNext.forEach((button) => {
       paginaActual++;
     }
     cargarProductos(productos);
-    updateBtn(); // Añadimos esta línea para actualizar los botones después de cambiar la página
+    updateBtn(); 
   });
 });
 
@@ -274,7 +339,7 @@ numbers.forEach((number, numIndex) => {
     e.preventDefault();
     paginaActual = numIndex + 1;
     cargarProductos(productos);
-    updateBtn(); // Añadimos esta línea para actualizar los botones después de cambiar la página
+    updateBtn(); 
   });
 });
 

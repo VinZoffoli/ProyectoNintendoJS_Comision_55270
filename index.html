@@ -48,17 +48,14 @@
         <div class="order-lg-2 nav-btns">
           <a href="carrito.html" class="position-relative custom-button">
             <i class="fa fa-shopping-cart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            <span id="numerito" class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
           </a>
           <button type="button" class="btn position-relative custom-button">
             <i class="fa fa-heart"></i>
             <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
           </button>
-          <button type="button" class="btn position-relative custom-button">
-            <i class="fa fa-search"></i>
-          </button>
+          
         </div>
-        
 
         <button
           class="navbar-toggler border-0"
@@ -116,8 +113,13 @@
           <div class="content">
             <div class="text-with-image">
               <div class="text">
-                <h1>Explora nuestras categorias</h1>
-                <a href="./productos.html">Productos</a>
+                <h1>¡Encuentra tu producto ideal!</h1>
+                <form id="search-form" action="productos.html" method="GET">
+                  <input type="text" id="search-input" name="search" placeholder="Buscar productos" />
+                  <button type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
               </div>
               <div class="image">
                 <figure class="img-holder" style="--width: 700; --height: 700;">

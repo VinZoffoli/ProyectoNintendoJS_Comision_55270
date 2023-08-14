@@ -49,15 +49,19 @@
         <div class="order-lg-2 nav-btns">
             <a href="carrito.html" class="position-relative custom-button">
               <i class="fa fa-shopping-cart"></i>
-              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+              <span id="numerito" class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
             </a>
             <button type="button" class="btn position-relative custom-button">
               <i class="fa fa-heart"></i>
               <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
             </button>
-            <button type="button" class="btn position-relative custom-button">
+            <button type="button" class="btn position-relative custom-button" id="search-icon">
               <i class="fa fa-search"></i>
             </button>
+            <div class="search-bar">
+              <input type="text" id="search-input" placeholder="Buscar productos" />
+            </div>
+            
           </div>
 
           <button
@@ -68,6 +72,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        
 
         <div class="collapse navbar-collapse order-lg-1" id="navMenu">
             <ul class="navbar-nav mx-auto text-center">
@@ -104,69 +109,36 @@
     </nav>
     <!-- navbar -->
 
-    <div class="wrapper">
-      <header class="header-mobile">
-        <h1 class="logo">Triforce</h1>
-        <button class="open-menu" id="open-menu">
-          <i class="bi bi-list"></i>
-        </button>
-      </header>
-      <aside>
-        <button class="close-menu" id="close-menu">
-          <i class="bi bi-x"></i>
-        </button>
-        <header>
-          <h1 class="logo">Triforce</h1>
-        </header>
-        <nav>
-          <ul class="menu">
-            <li>
-              <button id="todos" class="boton-menu boton-categoria active">
-                <i class="bi bi-hand-index-thumb-fill"></i> Todos los productos
-              </button>
-            </li>
-            <li>
-              <button id="videojuegos" class="boton-menu boton-categoria">
-                <i class="bi bi-hand-index-thumb"></i> Videojuegos
-              </button>
-            </li>
-            <li>
-              <button id="consolas" class="boton-menu boton-categoria">
-                <i class="bi bi-hand-index-thumb"></i> Consolas
-              </button>
-            </li>
-            <li>
-              <button id="amiibos" class="boton-menu boton-categoria">
-                <i class="bi bi-hand-index-thumb"></i> Amiibos
-              </button>
-            </li>
-            <li>
-              <button id="eshop" class="boton-menu boton-categoria">
-                <i class="bi bi-hand-index-thumb"></i> Eshop
-              </button>
-            </li>
-            <li>
-              <button id="accesorios" class="boton-menu boton-categoria">
-                <i class="bi bi-hand-index-thumb"></i> Accesorios
-              </button>
-            </li>
-            <li>
-              <a class="boton-menu boton-carrito" href="./carrito.html">
-                <i class="bi bi-cart-fill"></i> Carrito
-                <span id="numerito" class="numerito">0</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <footer>
-          <p class="texto-footer">© 2023 Triforce</p>
-        </footer>
-      </aside>
       <main class="main-background">
         <h2 class="titulo-principal" id="titulo-principal">
           Todos los productos
         </h2>
         <div class="search-pagination-container">
+          <sec id="coleccion" class="sec coleccion">
+            <div class="filtertitle">
+              <span>CATEGORIAS</span>
+            </div>
+            <div class="filters d-flex">
+              <div data-filter="todos">Todos los productos</div>
+              <div data-filter="videojuegos">Videojuegos</div>
+              <div data-filter="consolas">Consolas</div>
+              <div data-filter="eshop">Eshop</div>
+              <div data-filter="amiibos">Amiibos</div>
+              <div data-filter="accesorios">Accesorios</div>
+       
+            </div>
+            <div class="filterproducts filtercontainer">
+              <div class="filterswiper myfilterswiper">
+                <div class="filterswiper-wrapper" id="filterproducts">
+                  <div class="filterswiper-slide">
+                  </div>
+                </div>
+              </div>
+              <div class="filterpagination">
+                <div class="custom-filterpagination"></div>
+              </div>
+            </div>
+          </sec>
             <div class="Buscador">
               <input type="text" placeholder="Buscar" />
               <div class="btn">
@@ -180,7 +152,6 @@
             <button class="button prevNext" id="prev" disabled>
             <i class="fa-solid fa-angle-left"></i>
             </button>
-
             <div class="links">
             <a href="#" class="link active">1</a>
             <a href="#" class="link">2</a>
@@ -193,7 +164,6 @@
             <a href="#" class="link">9</a>
             <a href="#" class="link">10</a>
             </div>
-
             <button class="button prevNext" id="next">
                 <i class="fa-solid fa-angle-right"></i>
             </button>
@@ -203,7 +173,120 @@
             </div>
             <div id="contenedor-productos" class="contenedor-productos"></div>
         </main>
-    </div>
+
+
+           <!-- footer -->
+    <footer class="bg-dark py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a
+              class="text-uppercase text-decoration-none brand text-white"
+              href="index.html"
+              >Triforce</a
+            >
+            <p class="text-white text-muted mt-3">
+              Nos apasiona llevar la diversión y la emoción de los juegos,
+              personajes y mundos de Nintendo directamente a tu hogar.
+            </p>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Inicio
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Colección
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Ofertas
+                </a>
+              </li>
+              <li class="my-3">
+                <a href="#" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i> Sobre nosotros
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Contacto</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-map-marked-alt"></i>
+              </span>
+              <span class="fw-light"> Cordoba, Cordoba, Argentina </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="fw-light"> TriforceNintendo@gmail.com </span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-muted"
+            >
+              <span class="me-3">
+                <i class="fas fa-phone-alt"></i>
+              </span>
+              <span class="fw-light"> +54 351 8167329 </span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <h5 class="fw-light mb-3">Siguenos</h5>
+            <div>
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-white text-decoration-none text-muted fs-4 me-4"
+                  >
+                    <i class="fab fa-pinterest"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
