@@ -1,0 +1,803 @@
+[
+    {
+        "id": "videojuego-01",
+        "titulo": "Kirby and the Forgotten Land",
+        "imagen": "./assets/img/videojuegos/01.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-02",
+        "titulo": "Hollow Knight",
+        "imagen": "./assets/img/videojuegos/02.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-03",
+        "titulo": "Mario Kart 8: Deluxe",
+        "imagen": "./assets/img/videojuegos/03.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-04",
+        "titulo": "Pikmin 4",
+        "imagen": "./assets/img/videojuegos/04.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-05",
+        "titulo": "Pokemon Let's Go: Eevee",
+        "imagen": "./assets/img/videojuegos/05.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-06",
+        "titulo": "Super Smash Bros Ultimate",
+        "imagen": "./assets/img/videojuegos/06.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-07",
+        "titulo": "The Legend of Zelda: Breath of the Wild",
+        "imagen": "./assets/img/videojuegos/07.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-08",
+        "titulo": "The Legend of Zelda: Tears of the Kingdom",
+        "imagen": "./assets/img/videojuegos/08.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-09",
+        "titulo": "Splatoon 2",
+        "imagen": "./assets/img/videojuegos/09.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-10",
+        "titulo": "Super Mario Odyssey",
+        "imagen": "./assets/img/videojuegos/10.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-11",
+        "titulo": "Fire Emblem: Three Houses",
+        "imagen": "./assets/img/videojuegos/11.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-12",
+        "titulo": "Pokemon Escarlata",
+        "imagen": "./assets/img/videojuegos/12.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-13",
+        "titulo": "Pokemon Arceus",
+        "imagen": "./assets/img/videojuegos/13.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-14",
+        "titulo": "Xenoblade Chronicles 3",
+        "imagen": "./assets/img/videojuegos/14.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-15",
+        "titulo": "Super Mario 3D World + Bowser's Fury",
+        "imagen": "./assets/img/videojuegos/15.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-16",
+        "titulo": "Kirby Star Allies",
+        "imagen": "./assets/img/videojuegos/16.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-17",
+        "titulo": "Hyrule Warriors: La era del cataclismo",
+        "imagen": "./assets/img/videojuegos/17.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-18",
+        "titulo": "Yoshi's Crafted World",
+        "imagen": "./assets/img/videojuegos/18.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-19",
+        "titulo": "Mario + Rabbits Kingdom Battle",
+        "imagen": "./assets/img/videojuegos/19.webp",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "videojuego-20",
+        "titulo": "Minecraft",
+        "imagen": "./assets/img/videojuegos/20.jpg",
+        "categoria": {
+            "nombre": "Videojuegos",
+            "id": "videojuegos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-01",
+        "titulo": "Nintendo Switch: OLED (Neon)",
+        "imagen": "./assets/img/consolas/C1.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-02",
+        "titulo": "Nintendo Switch: OLED (White)",
+        "imagen": "./assets/img/consolas/C2.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-03",
+        "titulo": "Nintendo Switch Neon",
+        "imagen": "./assets/img/consolas/C3.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-04",
+        "titulo": "Nintendo 3DS",
+        "imagen": "./assets/img/consolas/C4.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-05",
+        "titulo": "Nintendo 3DS XL: Zelda Edition",
+        "imagen": "./assets/img/consolas/C5.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-06",
+        "titulo": "Nintendo Wii",
+        "imagen": "./assets/img/consolas/C6.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-07",
+        "titulo": "Nintendo Wii U",
+        "imagen": "./assets/img/consolas/C7.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-08",
+        "titulo": "SNES Classic Edition",
+        "imagen": "./assets/img/consolas/C8.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-09",
+        "titulo": "Nintendo Switch: Pokemon Let's Go! Edition",
+        "imagen": "./assets/img/consolas/C9.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-10",
+        "titulo": "Nintendo DSi: Pink",
+        "imagen": "./assets/img/consolas/C10.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-11",
+        "titulo": "Nintendo DSi XL: Red",
+        "imagen": "./assets/img/consolas/C11.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-12",
+        "titulo": "Nintendo DSi LL: Brown",
+        "imagen": "./assets/img/consolas/C12.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-13",
+        "titulo": "Nintendo Wii U: Zelda Edition",
+        "imagen": "./assets/img/consolas/C13.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-14",
+        "titulo": "Nintendo Wii U: Mario Kart Edition",
+        "imagen": "./assets/img/consolas/C14.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-15",
+        "titulo": "Nintendo Wii U: Super Smash Bros Edition",
+        "imagen": "./assets/img/consolas/C15.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-16",
+        "titulo": "Nintendo Switch: OLED (Splatoon Edition)",
+        "imagen": "./assets/img/consolas/C16.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-17",
+        "titulo": "Nintendo Switch: OLED (Pokemon Escarlata Edition)",
+        "imagen": "./assets/img/consolas/C17.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-18",
+        "titulo": "Nintendo Switch: Super Smash Bros Edition",
+        "imagen": "./assets/img/consolas/C18.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-19",
+        "titulo": "Nintendo Switch: Mario Odissey Edition",
+        "imagen": "./assets/img/consolas/C19.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "consola-20",
+        "titulo": "Nintendo Switch Lite: Grey",
+        "imagen": "./assets/img/consolas/C20.png",
+        "categoria": {
+            "nombre": "Consolas",
+            "id": "consolas"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-01",
+        "titulo": "Amiibo: Marth",
+        "imagen": "./assets/img/amiibos/Amiibo1.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-02",
+        "titulo": "Amiibo: Link",
+        "imagen": "./assets/img/amiibos/Amiibo2.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-03",
+        "titulo": "Amiibo: Revali TLOZ: BOTW",
+        "imagen": "./assets/img/amiibos/Amiibo3.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-04",
+        "titulo": "Amiibo: MHS Barioth & Ayuria",
+        "imagen": "./assets/img/amiibos/Amiibo4.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-05",
+        "titulo": "Amiibo: MHS Rathian & Cheval",
+        "imagen": "./assets/img/amiibos/Amiibo5.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-06",
+        "titulo": "Amiibo: Waluigi",
+        "imagen": "./assets/img/amiibos/Amiibo6.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-07",
+        "titulo": "Amiibo: King K. Rool",
+        "imagen": "./assets/img/amiibos/Amiibo7.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-08",
+        "titulo": "Amiibo: Urbosa",
+        "imagen": "./assets/img/amiibos/Amiibo8.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-09",
+        "titulo": "Amiibo: Figura 8-Bit Link",
+        "imagen": "./assets/img/amiibos/Amiibo9.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-10",
+        "titulo": "Amiibo: Donkey Kong",
+        "imagen": "./assets/img/amiibos/Amiibo10.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-11",
+        "titulo": "Amiibo: Luigi",
+        "imagen": "./assets/img/amiibos/Amiibo11.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-12",
+        "titulo": "Amiibo: Rosaline",
+        "imagen": "./assets/img/amiibos/Amiibo12.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-13",
+        "titulo": "Amiibo: Detective Pikachu",
+        "imagen": "./assets/img/amiibos/Amiibo13.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-14",
+        "titulo": "Amiibo: Bokoblin",
+        "imagen": "./assets/img/amiibos/Amiibo14.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-15",
+        "titulo": "Amiibo: Richter",
+        "imagen": "./assets/img/amiibos/Amiibo15.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-16",
+        "titulo": "Amiibo: Piranha Plant",
+        "imagen": "./assets/img/amiibos/Amiibo16.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-17",
+        "titulo": "Amiibo: Daisy",
+        "imagen": "./assets/img/amiibos/Amiibo17.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-18",
+        "titulo": "Amiibo: Mario",
+        "imagen": "./assets/img/amiibos/Amiibo18.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-19",
+        "titulo": "Amiibo: Shovel Knight",
+        "imagen": "./assets/img/amiibos/Amiibo19.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "amiibo-20",
+        "titulo": "Amiibo: Steve",
+        "imagen": "./assets/img/amiibos/Amiibo20.png",
+        "categoria": {
+            "nombre": "Amiibos",
+            "id": "amiibos"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-01",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$5",
+        "imagen": "./assets/img/eshop/E6.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-02",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$10",
+        "imagen": "./assets/img/eshop/E2.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-03",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$20",
+        "imagen": "./assets/img/eshop/E1.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-04",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$35",
+        "imagen": "./assets/img/eshop/E3.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-05",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$50",
+        "imagen": "./assets/img/eshop/E5.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-06",
+        "titulo": "Tarjeta Prepago Nintendo eShop US$70",
+        "imagen": "./assets/img/eshop/E7.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-07",
+        "titulo": "Nintendo Switch Online - Prepago 3 meses (DIGITAL)",
+        "imagen": "./assets/img/eshop/E8.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "eshop-08",
+        "titulo": "Nintendo Switch Online - Prepago 12 meses (DIGITAL)",
+        "imagen": "./assets/img/eshop/E9.png",
+        "categoria": {
+            "nombre": "Eshop",
+            "id": "eshop"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-01",
+        "titulo": "Tarjeta SanDisk 1TB Extreme PRO Micro SD",
+        "imagen": "./assets/img/accesorios/A1.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-02",
+        "titulo": "Memoria SDXC 1TB c/adap SanDisk Extreme Pro",
+        "imagen": "./assets/img/accesorios/A2.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-03",
+        "titulo": "Tarjeta de Memoria SanDisk 128GB microSDXC NSW ",
+        "imagen": "./assets/img/accesorios/A3.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-04",
+        "titulo": "Tarjeta de Memoria SanDisk 64GB microSDXC NSW",
+        "imagen": "./assets/img/accesorios/A4.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-05",
+        "titulo": "Protector de Pantalla amFilm para Switch LITE NSW",
+        "imagen": "./assets/img/accesorios/A5.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-06",
+        "titulo": "Tarjeta de Memoria SanDisk 256GB microSDXC NSW",
+        "imagen": "./assets/img/accesorios/A6.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-07",
+        "titulo": "Tomtoc Case Nintendo Switch Pro Controller NSW",
+        "imagen": "./assets/img/accesorios/A7.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-08",
+        "titulo": "Tarjeta de Memoria SanDisk 512GB microSDXC NSW",
+        "imagen": "./assets/img/accesorios/A8.jpg",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-09",
+        "titulo": "Protector de Pantalla amFilm p/ Switch OLED NSW",
+        "imagen": "./assets/img/accesorios/A9.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-10",
+        "titulo": "SanDisk Tarjeta microSDXC 256 GB Ed Fortnite NSW",
+        "imagen": "./assets/img/accesorios/A10.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-11",
+        "titulo": "Tarjeta de Memoria SanDisk 1TB microSDXC NSW",
+        "imagen": "./assets/img/accesorios/A11.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "accesorios-12",
+        "titulo": "Control con cable PowerA Nano: Hello Tom Nook NSW",
+        "imagen": "./assets/img/accesorios/A12.png",
+        "categoria": {
+            "nombre": "Accesorios",
+            "id": "accesorios"
+        },
+        "precio": 1000
+    }
+    
+]
