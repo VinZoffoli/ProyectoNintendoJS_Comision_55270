@@ -121,29 +121,43 @@ function cargarProductos(productosElegidos) {
   productosPagina.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("box", "item");
-
+  
     div.innerHTML = `
-        <div class="slide-img">
-            <img src="${producto.imagen}" alt="${producto.titulo}" />
-            <div class="overlay">
-                <a href="#" class="buy-btn">Comprar</a>
-            </div>
+    <div class="slide-img">
+        <img src="${producto.imagen}" alt="${producto.titulo}" />
+        <div class="overlay">
+            <a href="#" class="buy-btn">Comprar</a>
+            <a href="detalles.html" class="details-btn">Ver detalles</a>
         </div>
-        <div class="detail-box">
-            <div class="type">
-                <a href="#">${producto.titulo}</a>
-                <span>${producto.categoria.nombre}</span>
-            </div>
-            <a href="#" class="price">$${producto.precio}</a>
+    </div>
+    <div class="detail-box">
+        <div class="type">
+            <a href="#">${producto.titulo}</a>
+            <span>${producto.categoria.nombre}</span>
         </div>
-    `;
+        <a href="#" class="price">$${producto.precio}</a>
+    </div>
+`;
 
+  
     const addToCartButton = div.querySelector(".buy-btn");
+    const detailsButton = div.querySelector(".details-btn");
+    
     addToCartButton.addEventListener("click", (event) => {
       event.preventDefault();
       agregarAlCarrito(producto);
     });
-
+    
+    // Agrega el evento para mostrar/ocultar el botón de detalles
+    div.addEventListener("mouseover", () => {
+      detailsButton.style.visibility = "visible";
+      detailsButton.style.animation = "fade 0.5s";
+    });
+    
+    div.addEventListener("mouseout", () => {
+      detailsButton.style.visibility = "hidden";
+    });
+  
     contenedorProductos.append(div);
   });
   const totalPages = Math.ceil(productosElegidos.length / productosPorPagina);
@@ -360,3 +374,24 @@ endBtn.addEventListener("click", () => {
   startBtn.disabled = false;
   prevNext[0].disabled = false;
 });
+
+const allHoverImages = document.querySelectorAll('.hover-container div img');
+const imgContainer = document.querySelector('.img-container');
+
+window.addEventListener('DOMContentLoaded', () => {
+    allHoverImages[0].parentElement.classList.add('active');
+});
+
+allHoverImages.forEach((image) => {
+    image.addEventListener('mouseover', () =>{
+        imgContainer.querySelector('img').src = image.src;
+        resetActiveImg();
+        image.parentElement.classList.add('active');
+    });
+});
+
+function resetActiveImg(){
+    allHoverImages.forEach((img) => {
+        img.parentElement.classList.remove('active');
+    });
+}
