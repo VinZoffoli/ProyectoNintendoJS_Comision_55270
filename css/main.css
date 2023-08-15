@@ -815,7 +815,7 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: var(--clr-gray);
-    color: var(--clr-main);
+    color: #E60012;
     padding: .5rem;
     padding-right: 1.5rem;
     border-radius: 1rem;
@@ -847,7 +847,7 @@ main {
     background-color: var(--clr-gray);
     padding: 1rem;
     border-radius: 1rem;
-    color: var(--clr-main);
+    color: #E60012;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -860,7 +860,7 @@ main {
     display: flex;
     background-color: var(--clr-gray);
     padding: 1rem;
-    color: var(--clr-main);
+    color: #E60012;
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -869,7 +869,7 @@ main {
 
 .carrito-acciones-comprar {
     border: 0;
-    background-color: var(--clr-main);
+    background-color: var(--clr-red);
     padding: 1rem;
     color: var(--clr-white);
     text-transform: uppercase;
